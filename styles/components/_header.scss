@@ -1,0 +1,169 @@
+body {
+  background: black;
+  color: $redMain;
+}
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  padding: 0px 20px;
+  //   background-image: url("../assets/logos/white-no-bg.png");
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.black-inverse-img {
+  background: white;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transition: $trans;
+}
+
+.color-img-hover {
+  background: black;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  transition: $trans;
+}
+
+.menu-left {
+  cursor: pointer;
+  .menu-image-container {
+    transition: $trans;
+  }
+  &:hover {
+    & .color-img-hover {
+      opacity: 1;
+    }
+    & .black-inverse-img {
+      opacity: 0;
+    }
+  }
+}
+
+.menu-right {
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding: 0px 20px;
+      a {
+        &:hover i.fa-instagram {
+          background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285aeb 90%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        text-decoration: none;
+        color: $whiteMain;
+        transition: $trans;
+        text-transform: uppercase;
+        &.menu-link:hover {
+          //   color: $redMain;
+          text-shadow: $redMain 3px 3px 3px;
+        }
+        &:hover i.fa-facebook-square {
+          color: #3b5998;
+        }
+      }
+    }
+  }
+}
+
+i {
+  &.fa-facebook-square {
+    right: 65px;
+    @include fontSize(22);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &.fa-instagram {
+    right: 20px;
+    @include fontSize(22);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.splash {
+  z-index: 1;
+  //   padding-top: 40px;
+  height: calc(100vh);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/background/flaming-bg.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  filter: blur(4px);
+}
+
+.splash-contents {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  img {
+    height: 400px;
+  }
+}
+
+.splash-text h2 {
+  color: $whiteMain;
+  text-shadow: $redMain 1px 1px 0px;
+  @include fontSize(20);
+  text-transform: uppercase;
+  font-family: "Rye", cursive;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.splash-buttons {
+  padding-top: 40px;
+  a {
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &.learn-more {
+      background-color: $redMain;
+      color: white;
+      font-weight: bold;
+      transition: $trans;
+      &:hover {
+        background-color: lighten($redMain, 10);
+      }
+    }
+  }
+}
+
+.header-bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(157, 0, 0, 0.7);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: $whiteMain;
+  padding: 15px 20px;
+  text-shadow: 3px 1px 1px $darkMain;
+  i {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,17 @@
+// VARIABLES
+
+// Color Variable
+$redMain: #9d0000;
+$whiteMain: #ffffff;
+$darkMain: #000000;
+
+// Transitions
+$trans: ease-out 0.15s all;
+
+// MIXINS
+
+// Font Size
+@mixin fontSize($sizeValue) {
+  font-size: $sizeValue * 1px * 0.7;
+  font-size: ($sizeValue/10) * 1rem * 0.7;
+}

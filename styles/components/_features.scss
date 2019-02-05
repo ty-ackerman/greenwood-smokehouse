@@ -1,0 +1,84 @@
+.features {
+  background-color: $darkMain;
+  color: $whiteMain;
+  text-align: center;
+  text-shadow: 2px 2px 1px $redMain;
+  padding: 50px 0 100px;
+}
+
+.features__all {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.features__third {
+  width: 33%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-container {
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px 0;
+  img {
+    height: 150px;
+    filter: drop-shadow(3px 3px 0 $redMain);
+  }
+}
+
+.features__title {
+  font-family: "Rye", cursive;
+  text-transform: uppercase;
+  @include fontSize(32);
+  margin-bottom: 40px;
+}
+
+.third__title {
+  @include fontSize(20);
+}
+
+//For Card Flip
+.third__title {
+  perspective: 1800px;
+}
+
+.card-flip {
+  margin-top: 20px;
+  position: relative;
+  transition: 0.4s all linear;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 150px;
+  transform-style: preserve-3d;
+  &:hover {
+    transform: rotateY(180deg);
+  }
+  .front,
+  .back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+  }
+  .front {
+    transform: rotateY(0deg);
+    height: 100;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    height: 200px;
+  }
+
+  .info-img {
+    width: 40px;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+  }
+
+  .info-text {
+    text-shadow: none;
+  }
+}

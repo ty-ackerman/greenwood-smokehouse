@@ -1,0 +1,35 @@
+.instagram-feed {
+  //   background-color: lighten(grey, 20);
+  background-color: $darkMain;
+}
+
+.gallery-title {
+  font-family: $title;
+  color: $whiteMain;
+  text-shadow: $redMain 3px 3px 3px;
+  text-transform: uppercase;
+  text-align: center;
+  h2 {
+    @include fontSize(32);
+    padding: 80px 0 40px 0;
+    margin: 0;
+  }
+}
+
+.gallery-subtitle {
+  text-align: center;
+  color: $whiteMain;
+  @include fontSize(18);
+  font-style: italic;
+  margin-bottom: 40px;
+  a {
+    text-decoration: none;
+    text-shadow: 2px 2px 1px $redMain;
+    color: $whiteMain;
+    transition: $trans;
+    &:hover {
+      color: $redMain;
+      text-shadow: 2px 2px 1px $darkMain;
+    }
+  }
+}

@@ -12,7 +12,12 @@
     />
     <link type="image/png" href="./assets/logos/black-no-bg.png" rel="icon" />
     <title>Greenwood Smokehouse</title>
-    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:400,700|Rye"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -22,9 +27,9 @@
           <div class="menu-image-container black-inverse-img">
             <img src="./assets/logos/black-inverse.png" alt="" />
           </div>
-            <div class="menu-image-container color-img-hover">
-                <img src="./assets/logos/red-white-no-bg.png" alt="" />
-            </div>
+          <div class="menu-image-container color-img-hover">
+            <img src="./assets/logos/red-white-no-bg.png" alt="" />
+          </div>
         </div>
         <div class="menu-right">
           <nav>
@@ -47,31 +52,155 @@
       <section class="hero">
         <div class="splash"></div>
         <div class="splash-contents">
-            <div class="splash-img">
-                <img src="./assets/logos/red-white-no-bg.png" alt="" />
-            </div>
+          <div class="splash-img">
+            <img src="./assets/logos/red-white-no-bg.png" alt="" />
+          </div>
           <div class="splash-text">
-            <h2>Hardwood Smoked Meats - Fresh Ingredients </br> Cozy Atmosphere</h2>
+            <h2>
+              Hardwood Smoked Meats - Fresh Ingredients <br />Cozy Atmosphere
+            </h2>
           </div>
           <div class="splash-buttons">
-            <a href="#" class="learn-more">Learn More</a>
+            <a href="#features" class="learn-more">Learn More</a>
           </div>
         </div>
       </section>
       <section class="header-bottom">
-          <div class="left"><i class="fas fa-map-marker-alt"></i>673 Danforth Ave. Toronto, ON</div>
-          <div class="right"><i class="fas fa-phone"></i>+1 (416) 469-2270</div>
+        <div class="left">
+          <i class="fas fa-map-marker-alt"></i>673 Danforth Ave. Toronto, ON
+        </div>
+        <div class="right"><i class="fas fa-phone"></i>+1 (416) 469-2270</div>
       </section>
     </header>
     <main>
-      <section class="features">
-        <div class="wrapper">Features Section</div>
+      <!-- Start of features section -->
+      <section id="features" class="features">
+        <div class="wrapper">
+          <div class="features__title">
+            The Greenwood Difference
+          </div>
+          <div class="features__all">
+            <div
+              data-aos="zoom-in-right"
+              class="features__third features__left"
+            >
+              <div class="third__title">
+                <h3>
+                  Sustainably<br />
+                  Raised Meat
+                </h3>
+              </div>
+              <div class="card-flip">
+                <div class="feature-icon-container front">
+                  <img src="./assets/icons/chicken.png" alt="" />
+                </div>
+                <div class="feature-info back">
+                  <div class="info-text">
+                    We start by making a fire with locally sourced hardwoods,
+                    like oak and sugar maple. <br />Then we take Ontario
+                    heritage-bred pork, Certified Angus beef, and hormone-free
+                    chicken brought to us by local suppliers. We season it with
+                    our signature blend of spices, and slow-smoke it for as long
+                    as it takes.
+                  </div>
+                  <div class="info-img">
+                    <img src="./assets/icons/chicken.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in-down"
+              class="features__third features__center"
+            >
+              <div class="third__title">
+                <h3>Locally Sourced <br />Ingredients</h3>
+              </div>
+              <div class="card-flip">
+                <div class="feature-icon-container front">
+                  <img src="./assets/icons/vegetables.png" alt="" />
+                </div>
+                <div class="feature-info back">
+                  <div class="info-text">
+                    We know you will love our vegetables. We hand-select them at
+                    local stores and prepare them ourselves. We want everyone to
+                    enjoy the flavours of wood-smoked food. That’s why we’re so
+                    proud of our vegetarian options, all made in-house from
+                    fresh ingredients.
+                  </div>
+                  <div class="info-img">
+                    <img src="./assets/icons/vegetables.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="features__third features__right"
+            >
+              <div class="third__title">
+                <h3>Cozy & Laid-Back <br />Atmosphere</h3>
+              </div>
+              <div class="card-flip">
+                <div class="feature-icon-container front">
+                  <img src="./assets/icons/pig-chillin.png" alt="" />
+                </div>
+                <div class="feature-info back">
+                  <div class="info-text">
+                    Kids young and old love our eclectic decor, inspired by your
+                    favourite basement rec room. Our menu has many family
+                    friendly items - oozy mac & cheese and kids-sized burgers;
+                    or sit at the bar to enjoy our craft beer selection,
+                    smokehouse cocktails and bourbon menu.
+                  </div>
+                  <div class="info-img">
+                    <img src="./assets/icons/pig-chillin.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="catering"><div class="wrapper">Catering</div></section>
+      <!-- End of Features section -->
+      <section class="catering">
+        <div class="catering-splash"></div>
+        <div class="wrapper">
+          <div class="catering-text">
+            <h3>Feeding a crowd?</h3>
+            <h4>We'd love to help!</h4>
+          </div>
+          <div class="catering-button-container">
+            <a href="#">Book Catering</a>
+          </div>
+        </div>
+      </section>
       <section class="instagram-feed">
-        <div class="wrapper">Instagram Feeds</div>
+        <div class="wrapper">
+          <div class="gallery-title"><h2>Instagram Gallery</h2></div>
+          <div class="gallery-subtitle">
+            Follow us on Instagram
+            <a href="https://www.instagram.com/greenwoodsmokehousebbq/"
+              >@greenwoodsmokehousebbq</a
+            >
+          </div>
+          <div id="pixlee_container"></div>
+          <script type="text/javascript">
+            window.PixleeAsyncInit = function() {
+              Pixlee.init({ apiKey: "gWC7PxnKuKiQdACxcEk5" });
+              Pixlee.addSimpleWidget({ widgetId: "14855" });
+            };
+          </script>
+          <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+        </div>
       </section>
     </main>
     <footer><div class="wrapper">Footer</div></footer>
   </body>
 </html>
+
+<script type="text/javascript">
+  AOS.init({
+    duration: 1500
+  });
+</script>

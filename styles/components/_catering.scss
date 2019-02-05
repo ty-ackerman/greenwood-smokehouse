@@ -1,0 +1,52 @@
+.catering-splash {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/background/meat-sticks.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(4px);
+  height: 300px;
+}
+.catering {
+  position: relative;
+  overflow: hidden;
+}
+
+.catering .wrapper {
+  position: absolute;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  right: 50%;
+  transform: translateX(50%);
+  h3 {
+    font-family: $title;
+    color: $whiteMain;
+    text-transform: uppercase;
+    text-shadow: $darkMain 3px 3px 3px;
+    @include fontSize(32);
+  }
+  h4 {
+    color: $whiteMain;
+    text-shadow: $darkMain 3px 3px 3px;
+    margin: 10px 0;
+    font-style: italic;
+    @include fontSize(20);
+  }
+  .catering-button-container {
+    margin-top: 40px;
+    a {
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: $redMain;
+      color: $whiteMain;
+      font-weight: bold;
+      transition: $trans;
+      &:hover {
+        background-color: lighten($redMain, 10);
+      }
+    }
+  }
+}

@@ -1,6 +1,11 @@
 body {
   background: black;
   color: $redMain;
+  font-family: $body;
+}
+
+header {
+  overflow: hidden;
 }
 
 .menu-bar {
@@ -130,7 +135,7 @@ i {
   text-shadow: $redMain 1px 1px 0px;
   @include fontSize(20);
   text-transform: uppercase;
-  font-family: "Rye", cursive;
+  font-family: $title;
   text-align: center;
   padding-top: 30px;
 }

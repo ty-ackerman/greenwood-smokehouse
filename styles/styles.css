@@ -175,9 +175,19 @@ html * {
   .wrapper {
     width: 85%; } }
 
+html {
+  scroll-behavior: smooth; }
+
+h3 {
+  margin: 0; }
+
 body {
   background: black;
-  color: #9d0000; }
+  color: #9d0000;
+  font-family: "Chivo", sans-serif; }
+
+header {
+  overflow: hidden; }
 
 .menu-bar {
   position: fixed;
@@ -346,3 +356,184 @@ i.fa-instagram {
   text-shadow: 3px 1px 1px #000000; }
   .header-bottom i {
     margin-right: 15px; }
+
+.features {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px 1px #9d0000;
+  padding: 50px 0 100px; }
+
+.features__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
+
+.features__third {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.feature-icon-container {
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px 0; }
+  .feature-icon-container img {
+    height: 150px;
+    -webkit-filter: drop-shadow(3px 3px 0 #9d0000);
+    filter: drop-shadow(3px 3px 0 #9d0000); }
+
+.features__title {
+  font-family: "Rye", cursive;
+  text-transform: uppercase;
+  font-size: 22.4px;
+  font-size: 2.24rem;
+  margin-bottom: 40px; }
+
+.third__title {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+.third__title {
+  -webkit-perspective: 1800px;
+  perspective: 1800px; }
+
+.card-flip {
+  margin-top: 20px;
+  position: relative;
+  -webkit-transition: 0.4s all linear;
+  -o-transition: 0.4s all linear;
+  transition: 0.4s all linear;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 150px;
+  transform-style: preserve-3d; }
+  .card-flip:hover {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .card-flip .front,
+  .card-flip .back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100%; }
+  .card-flip .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    height: 100; }
+  .card-flip .back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    height: 200px; }
+  .card-flip .info-img {
+    width: 40px;
+    margin: 0 auto;
+    padding: 10px 0 0 0; }
+  .card-flip .info-text {
+    text-shadow: none; }
+
+.catering-splash {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/background/meat-sticks.jpeg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/background/meat-sticks.jpeg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/background/meat-sticks.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/background/meat-sticks.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+  height: 300px; }
+
+.catering {
+  position: relative;
+  overflow: hidden; }
+
+.catering .wrapper {
+  position: absolute;
+  top: 25%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%); }
+  .catering .wrapper h3 {
+    font-family: "Rye", cursive;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: #000000 3px 3px 3px;
+    font-size: 22.4px;
+    font-size: 2.24rem; }
+  .catering .wrapper h4 {
+    color: #ffffff;
+    text-shadow: #000000 3px 3px 3px;
+    margin: 10px 0;
+    font-style: italic;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .catering .wrapper .catering-button-container {
+    margin-top: 40px; }
+    .catering .wrapper .catering-button-container a {
+      padding: 10px 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #9d0000;
+      color: #ffffff;
+      font-weight: bold;
+      -webkit-transition: ease-out 0.15s all;
+      -o-transition: ease-out 0.15s all;
+      transition: ease-out 0.15s all; }
+      .catering .wrapper .catering-button-container a:hover {
+        background-color: #d00000; }
+
+.instagram-feed {
+  background-color: #000000; }
+
+.gallery-title {
+  font-family: "Rye", cursive;
+  color: #ffffff;
+  text-shadow: #9d0000 3px 3px 3px;
+  text-transform: uppercase;
+  text-align: center; }
+  .gallery-title h2 {
+    font-size: 22.4px;
+    font-size: 2.24rem;
+    padding: 80px 0 40px 0;
+    margin: 0; }
+
+.gallery-subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12.6px;
+  font-size: 1.26rem;
+  font-style: italic;
+  margin-bottom: 40px; }
+  .gallery-subtitle a {
+    text-decoration: none;
+    text-shadow: 2px 2px 1px #9d0000;
+    color: #ffffff;
+    -webkit-transition: ease-out 0.15s all;
+    -o-transition: ease-out 0.15s all;
+    transition: ease-out 0.15s all; }
+    .gallery-subtitle a:hover {
+      color: #9d0000;
+      text-shadow: 2px 2px 1px #000000; }

@@ -1,0 +1,104 @@
+main.catering-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../assets/background/flaming-bg.jpeg");
+    background-size: cover;
+    .wrapper {
+        display: flex; 
+    }
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+.catering-left {
+    width:60%;
+    background-color: rgba(0,0,0,.7);
+    margin-right: 10px;
+    padding: 30px;
+    border-radius: 4px;
+    position: relative;
+    color: white;
+    text-align: center;
+    p {
+        margin-top: 65px;
+        line-height: 30px;
+        @include fontSize(18);        
+    }
+    a {
+        @include fontSize(22);        
+        color: $redMain;
+        transition: $trans;
+        &:hover {
+            color: lighten($redMain, 30);
+        }
+    }
+}
+.catering-right {
+    width: 40%;
+}
+
+.catering-right form {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 30px;
+    // background: rgb(215, 215, 215);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    margin-left: 10px;
+    color: $darkMain;
+    input,
+    textarea {
+        border: 1px solid transparent;
+        border-radius: 2px;
+        margin-bottom: 15px;
+        padding: 5px;
+        &:focus {
+            border: 1px solid $redMain; 
+        }
+    }
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type=submit] {
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 0;
+        transition: $trans;
+        &:hover {
+            background-color: lighten($redMain, 60)
+        }
+    }
+}
+
+footer.catering-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.catering-main h2 {
+    font-family: $title;
+    text-transform: uppercase;
+    color: $whiteMain;
+    text-shadow: $redMain 3px 3px 3px;
+    text-align: center;
+    @include fontSize(32);
+    margin: 0;
+}
+
+.catering-image-container {
+    width: 250px;
+    margin: 20px auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

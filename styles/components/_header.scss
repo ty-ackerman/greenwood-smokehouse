@@ -88,20 +88,22 @@ header {
   }
 }
 
-i {
-  &.fa-facebook-square {
-    right: 65px;
-    @include fontSize(22);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  &.fa-instagram {
-    right: 20px;
-    @include fontSize(22);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+header {
+  i {
+    &.fa-facebook-square {
+      right: 65px;
+      @include fontSize(22);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &.fa-instagram {
+      right: 20px;
+      @include fontSize(22);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }
 

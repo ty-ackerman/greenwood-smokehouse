@@ -1,7 +1,50 @@
-// footer {
-//   background-color: darken($redMain, 20);
-// }
+footer {
+  background-color: darken($redMain, 10);
 
-// .wrapper {
-//   color: $whiteMain;
-// }
+  .wrapper {
+    color: $whiteMain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+footer li {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+    i {
+      color: $whiteMain;
+      @include fontSize(22);
+      margin-left: 10px;
+      &.fa-instagram:hover {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.fa-facebook-square:hover {
+        color: #3b5998;
+      }
+      &.fa-tripadvisor:hover {
+        background: linear-gradient(120deg, #00af87, #ffea4c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &.fa-twitter-square:hover {
+        color: #00a2f8;
+      }
+    }
+  }
+}
+
+footer ul {
+  display: flex;
+}

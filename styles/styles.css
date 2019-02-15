@@ -261,7 +261,7 @@ header {
       .menu-right ul li a:hover i.fa-facebook-square {
         color: #3b5998; }
 
-i.fa-facebook-square {
+header i.fa-facebook-square {
   right: 65px;
   font-size: 15.4px;
   font-size: 1.54rem;
@@ -271,7 +271,7 @@ i.fa-facebook-square {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-i.fa-instagram {
+header i.fa-instagram {
   right: 20px;
   font-size: 15.4px;
   font-size: 1.54rem;
@@ -448,6 +448,51 @@ i.fa-instagram {
   .card-flip .info-text {
     text-shadow: none; }
 
+footer {
+  background-color: #6a0000; }
+  footer .wrapper {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+footer li {
+  list-style-type: none; }
+  footer li a {
+    text-decoration: none; }
+    footer li a i {
+      color: #ffffff;
+      font-size: 15.4px;
+      font-size: 1.54rem;
+      margin-left: 10px; }
+      footer li a i.fa-instagram:hover {
+        background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      footer li a i.fa-facebook-square:hover {
+        color: #3b5998; }
+      footer li a i.fa-tripadvisor:hover {
+        background: -webkit-linear-gradient(330deg, #00af87, #ffea4c);
+        background: -o-linear-gradient(330deg, #00af87, #ffea4c);
+        background: linear-gradient(120deg, #00af87, #ffea4c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      footer li a i.fa-twitter-square:hover {
+        color: #00a2f8; }
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .catering-splash {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../assets/background/meat-sticks.jpeg");
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/background/meat-sticks.jpeg");
@@ -506,7 +551,8 @@ i.fa-instagram {
         background-color: #d00000; }
 
 .instagram-feed {
-  background-color: #000000; }
+  background-color: #000000;
+  padding-bottom: 60px; }
 
 .gallery-title {
   font-family: "Rye", cursive;

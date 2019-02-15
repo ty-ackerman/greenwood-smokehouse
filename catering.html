@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="image/png" href="./assets/logos/black-no-bg.png" rel="icon" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous"
+  />
+    <title>Catering | Greenwood Smokehouse</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Chivo:400,700|Rye"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./styles/styles.css" />
+
+</head>
+<body>
+    <header>
+        <div class="menu-bar">
+            <div class="menu-left">
+              <div class="menu-image-container black-inverse-img">
+                <img src="./assets/logos/black-inverse.png" alt="" />
+              </div>
+              <div class="menu-image-container color-img-hover">
+                <img src="./assets/logos/red-white-no-bg.png" alt="" />
+              </div>
+            </div>
+            <div class="menu-right">
+              <nav>
+                <ul>
+                  <li><a class="menu-link" href="#">Home</a></li>
+                  <li><a class="menu-link" href="#">Menu</a></li>
+                  <li><a class="menu-link" href="#">Catering</a></li>
+                  <li><a class="menu-link" href="#">Contact Us</a></li>
+                  <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+    </header>
+    <main class="catering-main">
+      <div class="wrapper">
+        <div class="catering-left">
+          <h2>Greenwood Smokehouse<br/>Catering</h2>
+          <p>Feeding a Crowd? We'd love to help!<br/>Submit a catering request or contact us by email at: </p>
+          <a href="mailto:greenwoodsmokehouse@outlook.com?Subject=Catering%20Request" target="_top">GreenwoodSmokehouse@outlook.com</a>
+          <div class="catering-image-container">
+            <img src="./assets/logos/red-white-no-bg.png" alt="">
+          </div>
+        </div>
+        <div class="catering-right">
+
+          <form action="https://formspree.io/me@tylerackerman.io" method="POST" />
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+
+            <label for="event">Event:</label>
+            <input type="text" id="event" name="event">
+
+            <label for="message">Additional Information:</label>
+            <textarea name="message" id="message" name="message" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="submit request">
+          </form>
+
+        </div>
+
+      </div>
+
+    </main>
+    <footer class="catering-footer">Footer</footer>
+</body>
+</html>

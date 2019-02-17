@@ -697,3 +697,13 @@ footer.catering-footer {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
+
+.contact-us__left,
+.contact-us__right {
+  width: 50%; }
+
+.contact-us .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff; }

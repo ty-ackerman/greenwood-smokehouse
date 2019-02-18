@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link type="image/png" href="./assets/logos/black-no-bg.png" rel="icon" />
-    <title>Greenwood Smokehouse | Contact Us</title>
+    <title>Contact Us | Greenwood Smokehouse</title>
     <link
       href="https://fonts.googleapis.com/css?family=Chivo:400,700|Rye"
       rel="stylesheet"
@@ -65,39 +65,50 @@
         </div>
       </div>
     </header>
-    <h1>My Google Map</h1>
     <main class="contact-us">
       <div class="wrapper">
         <div class="contact-us__left">
-          <h1>Contact Us</h1>
+          <h2>Contact Us</h2>
           <div class="contact-us__methods">
             <div class="address">
-              <i class="fas fa-map-marker-alt"></i>673 Danforth Ave. Toronto, ON
+              <i class="fas fa-map-marker-alt"></i><a target="_blank" href="https://www.google.ca/maps/place/Greenwood+Smokehouse+BBQ/@43.6788748,-79.3464231,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4cc8482592bb9:0x933c5d4cd72b08e6!8m2!3d43.6788748!4d-79.3442344">673 Danforth Ave. Toronto, ON</a>
             </div>
             <div class="phone-number">
-              <i class="fas fa-phone"></i>+1 (416) 469-2270
+              <i class="fas fa-phone"></i><a href="tel:+14164692270">+1 (416) 469-2270 (no reservations)</a>
             </div>
             <div class="facebook">
               <i class="fab fa-facebook-square"
-                ><a href="https://www.facebook.com/GreenwoodSmokehouseBBQ/"
+                ></i><a target="_blank" href="https://www.facebook.com/GreenwoodSmokehouseBBQ/"
                   >www.facebook.com/GreenwoodSmokehouseBBQ/</a
-                ></i
-              >
+                >
             </div>
             <div class="instagram">
               <i class="fab fa-instagram"
-                ><a href="https://www.instagram.com/greenwoodsmokehousebbq/"
-                  >www.instagram.com/greenwoodsmokehousebbq/</a
-                ></i
-              >
+                ></i><a target="_blank" href="https://www.instagram.com/greenwoodsmokehousebbq/"
+                  >www.instagram.com/GreenwoodSmokehouseBBQ/</a
+                >
             </div>
             <div class="twitter">
-              <i class="fab fa-twitter-square"
-                ><a href="https://twitter.com/Greenwood_BBQ"
+              <i class="fab fa-twitter"
+                ></i><a target="_blank" href="https://twitter.com/Greenwood_BBQ"
                   >www.twitter.com/Greenwood_BBQ</a
-                ></i
-              >
+                >
             </div>
+            <div class="twitter">
+              <i class="fab fa-uber"></i>
+                <a target="_blank" href="https://www.ubereats.com/en-CA/toronto/food-delivery/greenwood-smokehouse-bbq/Q0e9RCkTThqXL-y80sVZfg/">Delivery by <span>Uber Eats</span></a>
+              </i>
+            </div>
+          </div>
+          <div class="contact-us__hours">
+            <h2>Hours</h2>
+               <div class="day-hours"><span>Monday:</span><span class="hours-right"> Closed<br/></span></div>
+               <div class="day-hours"><span>Tuesday:</span><span class="hours-right"> 5pm - 10pm<br/></span></div>
+               <div class="day-hours"><span>Wednesday:</span><span class="hours-right"> 5pm - 10pm<br/></span></div>
+               <div class="day-hours"><span>Thursday:</span><span class="hours-right"> 5pm - 10pm<br/></span></div>
+               <div class="day-hours"><span>Friday:</span><span class="hours-right"> 12pm - 11pm<br/></span></div>
+               <div class="day-hours"><span>Saturday:</span><span class="hours-right"> 11am - 11pm<br/></span></div>
+               <div class="day-hours"><span>Sunday:</span><span class="hours-right"> 11am - 9pm</span></div>
           </div>
         </div>
         <div class="contact-us__right">
@@ -105,7 +116,7 @@
             <div class="gmap_canvas">
               <iframe
                 width="600"
-                height="500"
+                height="100%"
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=greenwood%20smokehouse&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 frameborder="0"
@@ -113,19 +124,19 @@
                 marginheight="0"
                 marginwidth="0"
               ></iframe>
-              <a href="https://www.pureblack.de"></a>
+              <a target="_blank" href="https://www.pureblack.de"></a>
             </div>
             <style>
               .mapouter {
                 text-align: right;
-                height: 500px;
+                height: 100%;
                 width: 600px;
               }
 
               .gmap_canvas {
                 overflow: hidden;
                 background: none !important;
-                height: 500px;
+                height: 100%;
                 width: 600px;
               }
             </style>
@@ -133,5 +144,34 @@
         </div>
       </div>
     </main>
+    <footer class="contact-footer">
+      <div class="wrapper">
+        <div class="footer-left">© 2019 Greenwood Smokehouse</div>
+        <div class="footer-right">
+          <ul class="footer-icons">
+            <li>
+              <a target="_blank" href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.tripadvisor.ca/Restaurant_Review-g155019-d5857743-Reviews-Greenwood_Smokehouse_BBQ-Toronto_Ontario.html">
+                <i class="fab fa-tripadvisor"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

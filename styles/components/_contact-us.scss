@@ -1,9 +1,89 @@
-.contact-us__left,
+.contact-us__left {
+  width: 55%;
+  padding: 25px;
+  color: $whiteMain;
+  i {
+    color: $redMain;
+  }
+  a {
+    text-decoration: none;
+    color: $whiteMain;
+  }
+  h2 {
+    font-family: $title;
+    color: $whiteMain;
+    text-transform: uppercase;
+    text-shadow: $redMain 3px 3px 3px;
+    @include fontSize(28);
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .day-hours {
+    position: relative;
+    padding-bottom: 7px;
+    span {
+      color: $whiteMain;
+      text-shadow: 3px 3px 3px $redMain;
+      &.hours-right {
+        color: $whiteMain;
+        position: absolute;
+        left: 120px;
+        text-align: right;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
 .contact-us__right {
-  width: 50%;
+  width: 45%;
 }
 
 .contact-us .wrapper {
   display: flex;
-  background: $whiteMain;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  transform: translateY(-50%);
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-us {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../assets/background/gws-restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 51px);
+  position: relative;
+  top: 51px;
+}
+
+.contact-us__methods {
+  margin-bottom: 40px;
+  div {
+    padding: 5px;
+    a {
+      font-family: $body;
+      transition: $trans;
+      &:hover {
+        color: lighten($redMain, 0);
+        text-decoration: underline;
+      }
+    }
+    i {
+      margin-right: 10px;
+      @include fontSize(18);
+      color: $whiteMain;
+      text-shadow: 3px 3px 3px $redMain;
+    }
+  }
 }

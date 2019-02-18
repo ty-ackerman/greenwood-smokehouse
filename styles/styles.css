@@ -698,12 +698,88 @@ footer.catering-footer {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.contact-us__left,
+.contact-us__left {
+  width: 55%;
+  padding: 25px;
+  color: #ffffff; }
+  .contact-us__left i {
+    color: #9d0000; }
+  .contact-us__left a {
+    text-decoration: none;
+    color: #ffffff; }
+  .contact-us__left h2 {
+    font-family: "Rye", cursive;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: #9d0000 3px 3px 3px;
+    font-size: 19.6px;
+    font-size: 1.96rem;
+    margin: 0;
+    margin-bottom: 20px; }
+  .contact-us__left .day-hours {
+    position: relative;
+    padding-bottom: 7px; }
+    .contact-us__left .day-hours span {
+      color: #ffffff;
+      text-shadow: 3px 3px 3px #9d0000; }
+      .contact-us__left .day-hours span.hours-right {
+        color: #ffffff;
+        position: absolute;
+        left: 120px;
+        text-align: right;
+        text-shadow: none; }
+
 .contact-us__right {
-  width: 50%; }
+  width: 45%; }
 
 .contact-us .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #ffffff; }
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(50%); }
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.contact-us {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../assets/background/gws-restaurant.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background/gws-restaurant.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background/gws-restaurant.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/background/gws-restaurant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 51px);
+  position: relative;
+  top: 51px; }
+
+.contact-us__methods {
+  margin-bottom: 40px; }
+  .contact-us__methods div {
+    padding: 5px; }
+    .contact-us__methods div a {
+      font-family: "Chivo", sans-serif;
+      -webkit-transition: ease-out 0.15s all;
+      -o-transition: ease-out 0.15s all;
+      transition: ease-out 0.15s all; }
+      .contact-us__methods div a:hover {
+        color: #9d0000;
+        text-decoration: underline; }
+    .contact-us__methods div i {
+      margin-right: 10px;
+      font-size: 12.6px;
+      font-size: 1.26rem;
+      color: #ffffff;
+      text-shadow: 3px 3px 3px #9d0000; }

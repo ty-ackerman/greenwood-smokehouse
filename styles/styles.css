@@ -783,3 +783,35 @@ footer.catering-footer {
       font-size: 1.26rem;
       color: #ffffff;
       text-shadow: 3px 3px 3px #9d0000; }
+
+.menu .wrapper {
+  background-color: white;
+  position: relative;
+  top: 50px;
+  padding: 20px; }
+
+.category {
+  width: 50%; }
+  .category h2 {
+    font-family: "Rye", cursive;
+    color: #9d0000;
+    text-shadow: 1px 1px 1px #000000;
+    text-transform: uppercase;
+    margin: 0; }
+  .category .items-container {
+    border-top: 2px solid #000000;
+    margin-top: 15px; }
+  .category span {
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    float: left;
+    font-size: 12.6px;
+    font-size: 1.26rem; }
+    .category span.price {
+      text-align: right;
+      font-size: 10.5px;
+      font-size: 1.05rem; }
+  .category p.item-info {
+    clear: both;
+    color: #000000; }

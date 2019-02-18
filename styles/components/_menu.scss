@@ -1,0 +1,36 @@
+.menu .wrapper {
+  background-color: white;
+  position: relative;
+  top: 50px;
+  padding: 20px;
+}
+
+.category {
+  width: 50%;
+  h2 {
+    font-family: $title;
+    color: $redMain;
+    text-shadow: 1px 1px 1px $darkMain;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .items-container {
+    border-top: 2px solid $darkMain;
+    margin-top: 15px;
+  }
+  span {
+    display: block;
+    width: 50%;
+    font-weight: bold;
+    float: left;
+    @include fontSize(18);
+    &.price {
+      text-align: right;
+      @include fontSize(15);
+    }
+  }
+  p.item-info {
+    clear: both;
+    color: $darkMain;
+  }
+}

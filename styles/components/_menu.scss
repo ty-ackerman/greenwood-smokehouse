@@ -3,34 +3,57 @@
   position: relative;
   top: 50px;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.menu-footer {
+  position: absolute;
+  width: 100%;
 }
 
 .category {
-  width: 50%;
+  width: 48%;
   h2 {
     font-family: $title;
     color: $redMain;
     text-shadow: 1px 1px 1px $darkMain;
     text-transform: uppercase;
     margin: 0;
+    @include fontSize(24);
+    text-align: center;
   }
   .items-container {
     border-top: 2px solid $darkMain;
     margin-top: 15px;
+    padding: 20px 0;
   }
   span {
     display: block;
-    width: 50%;
     font-weight: bold;
     float: left;
     @include fontSize(18);
     &.price {
       text-align: right;
       @include fontSize(15);
+      width: 25%;
+    }
+    &.item-name {
+      width: 75%;
     }
   }
   p.item-info {
     clear: both;
     color: $darkMain;
   }
+}
+
+.category-desc {
+  color: $darkMain;
+  font-style: italic;
+  @include fontSize(12);
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
 }

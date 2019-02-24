@@ -1,16 +1,25 @@
-.menu .wrapper {
-  background-color: white;
+.menu .wrapper.menu-wrapper {
+  background-color: $whiteMain;
   position: relative;
-  top: 50px;
+  top: 70px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
+  margin-bottom: 80px;
+  border: 5px solid $redMain;
+  .logo-container {
+    width: 250px;
+    margin: 0 auto;
+    // margin-bottom: 0px;
+  }
 }
 
-.menu-footer {
+footer.menu-footer {
   position: absolute;
   width: 100%;
+  margin-top: 10px;
+  // bottom: 0;
 }
 
 .category {
@@ -31,6 +40,7 @@
     justify-content: space-between;
     .one-item {
       width: 48%;
+      transition: $trans;
     }
   }
   span {
@@ -50,6 +60,7 @@
   p.item-info {
     clear: both;
     color: $darkMain;
+    text-align: justify;
   }
 }
 
@@ -68,7 +79,7 @@
   margin: 10px auto;
 }
 
-.specials {
+.small {
   width: 48%;
   .one-item {
     width: 100%;
@@ -76,4 +87,59 @@
       width: 100%;
     }
   }
+}
+
+.kids .one-item {
+  margin-bottom: 16px;
+}
+
+.platters .one-item {
+  width: 31% !important;
+  // border: 1px solid red;
+}
+
+.one-item:hover {
+  transform: scale(1.02);
+}
+
+.sides .items-container {
+  justify-content: center;
+  .item-name {
+    text-align: center;
+    width: 250px;
+  }
+  .one-item {
+    width: 250px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  .item-info {
+    text-align: center;
+  }
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu-desc {
+  color: $darkMain;
+  width: 75%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+  p {
+    width: 350px;
+    text-align: justify;
+    margin: 20px auto;
+    span {
+      font-weight: bold;
+      color: $redMain;
+    }
+  }
+}
+
+.block {
+  width: 100%;
 }

@@ -14,20 +14,24 @@
 }
 
 .category {
-  width: 48%;
+  width: 100%;
   h2 {
     font-family: $title;
     color: $redMain;
-    text-shadow: 1px 1px 1px $darkMain;
     text-transform: uppercase;
     margin: 0;
     @include fontSize(24);
     text-align: center;
   }
   .items-container {
-    border-top: 2px solid $darkMain;
     margin-top: 15px;
     padding: 20px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .one-item {
+      width: 48%;
+    }
   }
   span {
     display: block;
@@ -53,7 +57,23 @@
   color: $darkMain;
   font-style: italic;
   @include fontSize(12);
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 10px 0;
   text-align: center;
+}
+
+.stylistic-line {
+  height: 2px;
+  width: 100px;
+  background-color: $redMain;
+  margin: 10px auto;
+}
+
+.specials {
+  width: 48%;
+  .one-item {
+    width: 100%;
+    .item-name {
+      width: 100%;
+    }
+  }
 }

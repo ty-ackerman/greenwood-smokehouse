@@ -62,7 +62,7 @@
   background-image: url("../assets/logos/red-white-no-bg.png");
   background-repeat: no-repeat;
   background-size: 700px;
-  height: calc(100vh - 51px);
+  min-height: calc(100vh - 51px);
   background-position: center 30px;
   position: relative;
   top: 51px;

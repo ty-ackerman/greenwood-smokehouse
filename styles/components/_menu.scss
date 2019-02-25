@@ -47,14 +47,16 @@ footer.menu-footer {
     display: block;
     font-weight: bold;
     float: left;
-    @include fontSize(18);
+    @include fontSize(16);
     &.price {
-      text-align: right;
-      @include fontSize(15);
-      width: 25%;
+      @include fontSize(12);
+      width: 101px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
     }
     &.item-name {
-      width: 75%;
+      width: calc(100% - 101px);
     }
   }
   p.item-info {
@@ -93,7 +95,7 @@ footer.menu-footer {
   margin-bottom: 16px;
 }
 
-.platters .one-item {
+.category.platters .one-item {
   width: 31% !important;
   // border: 1px solid red;
 }
@@ -142,4 +144,72 @@ footer.menu-footer {
 
 .block {
   width: 100%;
+}
+
+.menu-desc {
+  border: 1px dashed $redMain;
+  padding: 5px;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 1415px) {
+  .menu-desc {
+    width: 85%;
+  }
+  .menu-desc p {
+    width: 375px;
+  }
+}
+
+@media only screen and (max-width: 1275px) {
+  .menu-desc p {
+    width: 100%;
+    text-align: center;
+  }
+  .menu-desc {
+    .para1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .menu .wrapper.menu-wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .category .items-container .one-item {
+    width: 100%;
+  }
+  .sides .items-container .item-name {
+    width: 100%;
+  }
+}
+.specials p.item-info {
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .small {
+    width: 100%;
+    text-align: center;
+    p.item-info {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .category.platters .one-item {
+    width: 100% !important;
+    p.item-info {
+      text-align: center;
+    }
+    .item-name {
+      text-align: center;
+      padding-left: 102px;
+    }
+  }
 }

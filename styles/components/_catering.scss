@@ -1,6 +1,6 @@
 .catering-splash {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../assets/background/meat-sticks.jpeg");
+    url("../assets/background/meat_sticks.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -47,6 +47,17 @@
       &:hover {
         background-color: lighten($redMain, 10);
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .catering .wrapper {
+    h3 {
+      @include fontSize(25);
+    }
+    h4 {
+      @include fontSize(18);
     }
   }
 }

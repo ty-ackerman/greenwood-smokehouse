@@ -111,8 +111,14 @@ footer.catering-footer {
   flex-flow: column wrap;
 }
 
+.email-mobile {
+  display: none;
+  text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1100px) {
   .catering-main .wrapper {
+    margin: 80px 0;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -121,15 +127,46 @@ footer.catering-footer {
     .catering-left,
     .catering-right {
       width: 100%;
-    }
-    .catering-left {
+      margin: 0 0 20px 0;
+      form {
+        margin: 0;
+      }
     }
   }
 }
-html,
-body {
-  overflow: auto;
-  //   position: relative;
+
+@media only screen and (max-width: 750px) {
+  .catering-main .wrapper {
+    width: 90%;
+  }
+  .catering-main h2 {
+    @include fontSize(25);
+  }
+  .catering-main p,
+  .catering-main a {
+    @include fontSize(15);
+  }
+  .catering-main p {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .email-mobile {
+    display: inline;
+  }
+  .email-normal {
+    display: none;
+  }
+  .catering-image-container {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .catering-left {
+    padding: 15px;
+  }
 }
 
 html {

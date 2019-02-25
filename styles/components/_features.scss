@@ -82,3 +82,17 @@
     text-shadow: none;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .features__all {
+    flex-flow: column wrap;
+    align-items: center;
+    .features__third {
+      margin-bottom: 80px;
+      width: 100%;
+      &.features__right {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

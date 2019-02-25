@@ -21,7 +21,38 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body class="menu-body">
-    <header>
+    <header class="mobile-header">
+      <div class="menu-bar">
+        <div class="menu-left">
+          <a class="home-image" href="./index.html">
+            <div class="menu-image-container black-inverse-img">
+              <img src="./assets/logos/black-inverse.png" alt="" />
+            </div>
+            <div class="menu-image-container color-img-hover">
+              <img src="./assets/logos/red-white-no-bg.png" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="./index.html">Home</a></li>
+            <li><a class="menu-link" href="./menu.html">Menu</a></li>
+            <li><a class="menu-link" href="./catering.html">Catering</a></li>
+            <li><a class="menu-link" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <header class="normal-header">
       <div class="menu-bar">
         <div class="menu-left">
           <a href="./index.html">
@@ -36,27 +67,15 @@
         <div class="menu-right">
           <nav>
             <ul>
+              <li><a class="menu-link" href="./index.html">Home</a></li>
+              <li><a class="menu-link" href="./menu.html">Menu</a></li>
+              <li><a class="menu-link" href="./catering.html">Catering</a></li>
+              <li><a class="menu-link" href="./contact.html">Contact Us</a></li>
               <li>
-                <a class="menu-link" href="./index.html">Home</a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
               </li>
               <li>
-                <a class="menu-link" href="./menu.html">Menu</a>
-              </li>
-              <li>
-                <a class="menu-link" href="./catering.html">Catering</a>
-              </li>
-              <li>
-                <a class="menu-link" href="./contact.html">Contact Us</a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
               </li>
             </ul>
           </nav>

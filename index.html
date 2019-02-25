@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
@@ -21,7 +22,62 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="mobile-header">
+      <div class="menu-bar">
+        <div class="menu-left">
+          <a class="home-image" href="./index.html">
+            <div class="menu-image-container black-inverse-img">
+              <img src="./assets/logos/black-inverse.png" alt="" />
+            </div>
+            <div class="menu-image-container color-img-hover">
+              <img src="./assets/logos/red-white-no-bg.png" alt="" />
+            </div>
+          </a>
+        </div>
+
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a class="menu-link" href="./index.html">Home</a></li>
+            <li><a class="menu-link" href="./menu.html">Menu</a></li>
+            <li><a class="menu-link" href="./catering.html">Catering</a></li>
+            <li><a class="menu-link" href="./contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End of menu bar -->
+
+      <section class="hero">
+        <div class="splash"></div>
+        <div class="splash-contents">
+          <div class="splash-img">
+            <img src="./assets/logos/red-white-no-bg.png" alt="" />
+          </div>
+          <div class="splash-text">
+            <h2>
+              Hardwood Smoked Meats - Fresh Ingredients <br />Cozy Atmosphere
+            </h2>
+          </div>
+          <div class="splash-buttons">
+            <a href="#features" class="learn-more">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section class="header-bottom">
+        <div class="left">
+          <i class="fas fa-map-marker-alt"></i>673 Danforth Ave. Toronto, ON
+        </div>
+        <div class="right"><i class="fas fa-phone"></i>+1 (416) 469-2270</div>
+      </section>
+    </header>
+    <header class="normal-header">
       <div class="menu-bar">
         <div class="menu-left">
           <a href="./index.html">

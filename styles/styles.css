@@ -862,7 +862,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   overflow: hidden;
   position: absolute;
@@ -886,7 +886,8 @@ html {
   background-repeat: no-repeat;
   background-size: 700px;
   min-height: calc(100vh - 51px);
-  background-position: center 30px;
+  background-position: center 80px;
+  background-attachment: fixed;
   position: relative;
   top: 51px; }
 
@@ -908,6 +909,44 @@ html {
       font-size: 1.26rem;
       color: #ffffff;
       text-shadow: 3px 3px 3px #9d0000; }
+
+@media only screen and (max-width: 1050px) {
+  .contact-us .wrapper {
+    width: 90%; } }
+
+@media only screen and (max-width: 961px) {
+  .contact-us .wrapper {
+    width: 95%; } }
+
+@media only screen and (max-width: 911px) {
+  .contact-us__right {
+    display: none; }
+  .contact-us__left {
+    width: 100%; }
+  .contact-us .wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 500px; } }
+
+@media only screen and (max-width: 485px) {
+  .contact-us .wrapper {
+    width: 100%; }
+    .contact-us .wrapper .contact-us__left {
+      padding: 10px; } }
+
+@media only screen and (max-height: 800px) {
+  .contact-us .wrapper {
+    top: 20px;
+    bottom: 105px; } }
+
+@media only screen and (max-height: 700px) {
+  .contact-us .wrapper {
+    top: 0;
+    bottom: 85px; } }
 
 .menu .wrapper.menu-wrapper {
   background-color: #ffffff;

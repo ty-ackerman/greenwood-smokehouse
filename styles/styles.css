@@ -886,9 +886,8 @@ html {
   background-repeat: no-repeat;
   background-size: 700px;
   min-height: calc(100vh - 51px);
-  background-position: center 80px;
+  background-position: center 60px;
   background-attachment: fixed;
-  position: relative;
   top: 51px; }
 
 .contact-us__methods {
@@ -909,6 +908,9 @@ html {
       font-size: 1.26rem;
       color: #ffffff;
       text-shadow: 3px 3px 3px #9d0000; }
+
+.mobile-link {
+  display: none; }
 
 @media only screen and (max-width: 1050px) {
   .contact-us .wrapper {
@@ -936,17 +938,24 @@ html {
   .contact-us .wrapper {
     width: 100%; }
     .contact-us .wrapper .contact-us__left {
-      padding: 10px; } }
-
-@media only screen and (max-height: 800px) {
-  .contact-us .wrapper {
-    top: 20px;
-    bottom: 105px; } }
+      padding: 10px; }
+    .contact-us .wrapper .mobile-link {
+      display: inline-block; }
+    .contact-us .wrapper .full-screen-link {
+      display: none; } }
 
 @media only screen and (max-height: 700px) {
   .contact-us .wrapper {
-    top: 0;
-    bottom: 85px; } }
+    top: 50px; }
+  .mobile-link {
+    display: inline-block; }
+  .full-screen-link {
+    display: none; }
+  .contact-us {
+    background-attachment: initial;
+    min-height: calc(100vh - 25px); }
+  .contact-footer {
+    bottom: -88px; } }
 
 .menu .wrapper.menu-wrapper {
   background-color: #ffffff;
